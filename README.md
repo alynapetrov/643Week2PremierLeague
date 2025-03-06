@@ -14,8 +14,9 @@ Make sure that the files within the PL_data folder of this repo are also downloa
 The script contains a load_data function, which reads a list of csv files containing Premier League match data for a season. It extracts the needed columns containing home team, away team, and their respective goals for a match. The clean_data function filters teams that were in each season of the given input files and calculates the difference between expected and actual away goals for a team within a season. The make_heatmap function create a heatmap visual showing these calculated results. 
 
 To run the script, you can use the following command:
+
 python script.py PL_data/EPL_2016_matches.csv PL_data/EPL_2017_matches.csv PL_data/EPL_2018_matches.csv PL_data/EPL_2019_matches.csv out.html
 
 Any combinations of files for 2016-2019 as inputs will work similarly.
 
-To see the created heatmap, download the output html in open in in a supported environment (such as Chome). 
+To see the created heatmap, download the output html in open in in a supported environment (such as Chome). An example output html named "out.html" is already in this repo. Simply download it to view a heatmap created with this script. 
