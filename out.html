@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "rect"}, "encoding": {"color": {"field": "avgDif", "legend": {"title": "Avg Goal Difference"}, "scale": {"scheme": "redyellowgreen"}, "type": "quantitative"}, "x": {"axis": {"labelAngle": 0}, "field": "team", "title": "Team", "type": "nominal"}, "y": {"field": "season", "title": "Year", "type": "nominal"}}, "title": "Average Difference Between Expected Away Goals and Actual Away Goals"}, {"mark": {"type": "text", "fontWeight": "bold"}, "encoding": {"color": {"value": "black"}, "text": {"field": "avgDif", "format": ".2f", "type": "quantitative"}, "x": {"axis": {"labelAngle": 0}, "field": "team", "title": "Team", "type": "nominal"}, "y": {"field": "season", "title": "Year", "type": "nominal"}}, "title": "Average Difference Between Expected Away Goals and Actual Away Goals"}], "data": {"name": "data-40c7240675e7a7f08984e3fc92ab4d52"}, "height": 300, "width": 1150, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-40c7240675e7a7f08984e3fc92ab4d52": [{"season": 2016, "team": "Arsenal", "avgDif": 0.5132746842105264}, {"season": 2016, "team": "Bournemouth", "avgDif": -0.19226273684210526}, {"season": 2016, "team": "Burnley", "avgDif": -0.19941273684210525}, {"season": 2016, "team": "Chelsea", "avgDif": 0.24007957894736845}, {"season": 2016, "team": "Crystal Palace", "avgDif": 0.1930198947368421}, {"season": 2016, "team": "Everton", "avgDif": 0.06609004736842106}, {"season": 2016, "team": "Leicester", "avgDif": -0.12019373684210527}, {"season": 2016, "team": "Liverpool", "avgDif": 0.10485242105263155}, {"season": 2016, "team": "Manchester City", "avgDif": 0.22810126315789472}, {"season": 2016, "team": "Manchester United", "avgDif": 0.14931915789473685}, {"season": 2016, "team": "Southampton", "avgDif": 0.09494857894736844}, {"season": 2016, "team": "Tottenham", "avgDif": 0.5050037894736842}, {"season": 2016, "team": "Watford", "avgDif": -0.0010419947368421247}, {"season": 2016, "team": "West Ham", "avgDif": 0.13216831578947366}, {"season": 2017, "team": "Arsenal", "avgDif": -0.21271657894736842}, {"season": 2017, "team": "Bournemouth", "avgDif": 0.12698794736842106}, {"season": 2017, "team": "Burnley", "avgDif": 0.2079077894736842}, {"season": 2017, "team": "Chelsea", "avgDif": 0.369194}, {"season": 2017, "team": "Crystal Palace", "avgDif": -0.26724057894736847}, {"season": 2017, "team": "Everton", "avgDif": -0.23854742105263158}, {"season": 2017, "team": "Leicester", "avgDif": 0.36186847368421055}, {"season": 2017, "team": "Liverpool", "avgDif": 0.27300899999999995}, {"season": 2017, "team": "Manchester City", "avgDif": 0.2394377368421053}, {"season": 2017, "team": "Manchester United", "avgDif": 0.26252226315789473}, {"season": 2017, "team": "Southampton", "avgDif": -0.030622842105263167}, {"season": 2017, "team": "Tottenham", "avgDif": 0.1489744210526316}, {"season": 2017, "team": "Watford", "avgDif": -0.2921491052631579}, {"season": 2017, "team": "West Ham", "avgDif": 0.33172363157894735}, {"season": 2018, "team": "Arsenal", "avgDif": 0.20409484210526316}, {"season": 2018, "team": "Bournemouth", "avgDif": -0.07846305263157893}, {"season": 2018, "team": "Burnley", "avgDif": 0.10682573684210525}, {"season": 2018, "team": "Chelsea", "avgDif": -0.30950347368421055}, {"season": 2018, "team": "Crystal Palace", "avgDif": 0.5076171578947368}, {"season": 2018, "team": "Everton", "avgDif": 0.041059526315789484}, {"season": 2018, "team": "Leicester", "avgDif": 0.11946731578947366}, {"season": 2018, "team": "Liverpool", "avgDif": 0.029996315789473652}, {"season": 2018, "team": "Manchester City", "avgDif": -0.01713047368421053}, {"season": 2018, "team": "Manchester United", "avgDif": -0.002563684210526247}, {"season": 2018, "team": "Southampton", "avgDif": -0.2710696842105263}, {"season": 2018, "team": "Tottenham", "avgDif": 0.2943841578947368}, {"season": 2018, "team": "Watford", "avgDif": -0.05004905263157894}, {"season": 2018, "team": "West Ham", "avgDif": -0.13097663157894737}, {"season": 2019, "team": "Arsenal", "avgDif": -0.12505352631578948}, {"season": 2019, "team": "Bournemouth", "avgDif": -0.11493325789473682}, {"season": 2019, "team": "Burnley", "avgDif": 0.038678589473684216}, {"season": 2019, "team": "Chelsea", "avgDif": 0.37899}, {"season": 2019, "team": "Crystal Palace", "avgDif": 0.011003868421052606}, {"season": 2019, "team": "Everton", "avgDif": -0.2698011578947368}, {"season": 2019, "team": "Leicester", "avgDif": -0.010279194736842169}, {"season": 2019, "team": "Liverpool", "avgDif": 0.015789473684210516}, {"season": 2019, "team": "Manchester City", "avgDif": -0.35359015789473686}, {"season": 2019, "team": "Manchester United", "avgDif": -0.21853578947368418}, {"season": 2019, "team": "Southampton", "avgDif": -0.05068268421052633}, {"season": 2019, "team": "Tottenham", "avgDif": 0.12300136842105262}, {"season": 2019, "team": "Watford", "avgDif": -0.2842718947368421}, {"season": 2019, "team": "West Ham", "avgDif": -0.20664274736842103}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
